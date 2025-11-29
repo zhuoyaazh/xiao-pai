@@ -1,0 +1,32 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection string",
+      "required": true
+    },
+    "NEXTAUTH_SECRET": {
+      "description": "NextAuth secret (generate with: openssl rand -base64 32)",
+      "required": true
+    },
+    "NEXTAUTH_URL": {
+      "description": "NextAuth callback URL",
+      "required": true
+    },
+    "EMAIL_SERVICE": {
+      "description": "Email service (sendgrid or mailgun)",
+      "required": false,
+      "default": "sendgrid"
+    },
+    "EMAIL_API_KEY": {
+      "description": "Email service API key",
+      "required": false
+    },
+    "NEXT_PUBLIC_APP_URL": {
+      "description": "Public app URL",
+      "required": false
+    }
+  }
+}
