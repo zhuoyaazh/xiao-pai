@@ -25,11 +25,11 @@ A modern, mobile-first campus marketplace for students to buy, sell, and earn th
 ### Requirements
 - Node.js 18+ 
 - PostgreSQL (local or Vercel Postgres)
-- npm or yarn
+- pnpm
 
 ### 1. Install Dependencies
 ```bash
-npm install
+pnpm install
 ```
 
 ### 2. Environment Setup
@@ -64,21 +64,21 @@ MIDTRANS_CLIENT_KEY="yyy"
 ### 3. Database Setup
 ```bash
 # Generate Prisma Client
-npm run prisma:generate
+pnpm run prisma:generate
 
 # Create & migrate database
-npm run prisma:migrate:dev
+pnpm run prisma:migrate:dev
 
 # Seed sample data (optional)
-npm run seed
+pnpm run seed
 
 # View database (optional, opens Prisma Studio)
-npm run prisma:studio
+pnpm run prisma:studio
 ```
 
 ### 4. Run Development Server
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -160,14 +160,14 @@ xiaopai/
 ## 🚀 Available Scripts
 
 ```bash
-npm run dev              # Start dev server (localhost:3000)
-npm run build            # Build for production
-npm start                # Start prod server
-npm run lint             # Run ESLint
-npm run prisma:generate  # Generate Prisma Client
-npm run prisma:migrate:dev   # Run pending migrations
-npm run prisma:studio    # Open Prisma Studio (visual DB)
-npm run seed             # Populate with sample data
+pnpm run dev              # Start dev server (localhost:3000)
+pnpm run build            # Build for production
+pnpm start                # Start prod server
+pnpm run lint             # Run ESLint
+pnpm run prisma:generate  # Generate Prisma Client
+pnpm run prisma:migrate:dev   # Run pending migrations
+pnpm run prisma:studio    # Open Prisma Studio (visual DB)
+pnpm run seed             # Populate with sample data
 ```
 
 ## 💾 Database Schema Overview
@@ -244,7 +244,7 @@ git push origin main
 
 For manual deploy:
 ```bash
-npm i -g vercel
+pnpm i -g vercel
 vercel --prod
 ```
 
